@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>html5属性canvas实现性能堪比native体验效果的烟花播放效果</title>
+<style>
+	*{margin:0;padding:0;}
+	body{background: #494A5F;}
+</style>	
+</head>
+<body>
+
+<!-- 代码部分begin -->
+<div class="demo"></div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.fireworks.js"></script>
+<script>
+	$('.demo').fireworks({ 
+	  sound: false, // sound effect
+	  opacity: 0.9, 
+	  width: '100%', 
+	  height: '100%' 
+	});
+</script>
+<!-- 代码部分end -->
+
+</body>
+</html>
