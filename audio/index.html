@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .box2 {
+            width: 220px;
+            margin: auto;         
+            height: 170px;
+            line-height: 30px;
+            border: 1px solid gold;
+            margin-bottom: 20px;
+        }
+        .box2 p {
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            cursor:pointer
+        }
+        .box2 p:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>     
+    <div class="box">
+        <img src="./music/一拳.jpg" alt="" style="width: 250px;height: 220px;" id="imgs">
+    </div>
+    <div class="box2">
+        <p id="firstpic">一拳超人</p>
+        <p id="secondpic">妖精的尾巴</p>
+        <p id="threepic">七龙珠</p>
+    </div>
+    <audio src="./music/一拳超人.mp3" controls='controls' autoplay='autoplay' id="audios"></audio>
+</body>
+
+<script>
+    var audios = document.getElementById('audios')
+    var firstpic = document.getElementById('firstpic')
+    var imgs = document.getElementById('imgs')
+    var secondpic = document.getElementById('secondpic')
+    var threepic = document.getElementById('threepic')
+    firstpic.onclick = function(){
+        imgs.src = './music/一拳.jpg'
+        audios.src ='./music/一拳超人.mp3'
+    }
+    secondpic.onclick = function(){
+        imgs.src = './music/妖尾.gif'
+        audios.src ='./music/妖精的尾巴.mp3'
+    }
+    threepic.onclick = function(){
+        imgs.src = './music/七龙珠1.jpg'
+        audios.src ='./music/七龙珠.mp3'
+    }
+</script>
+</html>
